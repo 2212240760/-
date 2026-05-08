@@ -1,0 +1,4 @@
+[
+  { "id": "ball_basic", "name": "基础捕捉球", "power": 0.35 },
+  { "id": "ball_pro", "name": "强化捕捉球", "power": 0.55 }
+]

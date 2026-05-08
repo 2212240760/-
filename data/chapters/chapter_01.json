@@ -1,0 +1,6 @@
+{
+  "id": "chapter_01",
+  "requires": {},
+  "unlocks_regions": ["region_01"],
+  "reward_recipes": []
+}

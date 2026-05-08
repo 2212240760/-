@@ -1,0 +1,4 @@
+[
+  { "id": "bubble", "name": "泡泡", "cooldown": 2.0, "energy_cost": 0, "power": 6 },
+  { "id": "tackle", "name": "撞击", "cooldown": 1.0, "energy_cost": 0, "power": 4 }
+]

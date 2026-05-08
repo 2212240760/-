@@ -1,0 +1,16 @@
+[
+  {
+    "id": "smelt_ingot",
+    "name": "冶炼锭",
+    "ticks": 3,
+    "inputs": [{ "id": "ore", "qty": 2 }],
+    "outputs": [{ "id": "ingot", "qty": 1 }]
+  },
+  {
+    "id": "craft_sword",
+    "name": "打造短剑",
+    "ticks": 5,
+    "inputs": [{ "id": "ingot", "qty": 2 }],
+    "outputs": [{ "id": "sword", "qty": 1 }]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "chapter_02",
+  "requires": {
+    "boss_defeated": "boss_01",
+    "base_level": 3,
+    "codex_captured_total": 10
+  },
+  "unlocks_regions": ["region_02"],
+  "reward_recipes": ["ball_pro"]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "slime_001",
+  "name": "软泥团",
+  "rarity": "common",
+  "elements": ["water"],
+  "base_stats": { "hp": 30, "atk": 8, "def": 6, "spd": 7 },
+  "learnset": ["splash", "bubble"],
+  "possible_traits": ["sticky", "calm"]
+}
