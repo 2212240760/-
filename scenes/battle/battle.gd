@@ -22,6 +22,8 @@ func _ready() -> void:
 	attack_btn.pressed.connect(_on_attack)
 	capture_btn.pressed.connect(_on_capture)
 	leave_btn.pressed.connect(_on_leave)
+	if Game.current_encounter_species_id != "":
+		species_id = Game.current_encounter_species_id
 	_init_enemy()
 	_refresh()
 
@@ -34,7 +36,7 @@ func _init_enemy() -> void:
 		hp = max_hp
 
 func _refresh() -> void:
-	var balls := Game.inventory.get_item("ball_basic")
+	var balls = Game.inventory.get_item("ball_basic")
 	info_label.text = "野生: %s (%s)\nHP: %d/%d\n捕捉球: %d" % [species_id, rarity, hp, max_hp, balls]
 	capture_btn.disabled = ended
 	attack_btn.disabled = ended
@@ -58,14 +60,14 @@ func _on_capture() -> void:
 		return
 	Game.inventory.add_item("ball_basic", -1)
 
-	var ctx := CaptureContext.new()
+	var ctx = CaptureContext.new()
 	ctx.hp_ratio = float(hp) / float(max_hp)
 	ctx.in_window = hp <= int(max_hp * 0.25)
 	ctx.resist_stacks = resist_stacks
 	ctx.rarity = rarity
 
-	var power := Game.item_defs.get_power("ball_basic")
-	var ok := battle_capture.attempt_with_roll(power, ctx, Game.rng.randf())
+	var power = Game.item_defs.get_power("ball_basic")
+	var ok = battle_capture.attempt_with_roll(power, ctx, Game.rng.randf())
 	if ok:
 		Game.codex.mark_captured(species_id)
 		status_label.text = "捕获成功"
@@ -80,11 +82,11 @@ func _settle(victory: bool, captured: bool) -> void:
 	if not victory:
 		return
 	var dt = Game.load_region_drop_table("sample_region_01")
-	var drop := dt.roll(Game.rng)
+	var drop = dt.roll(Game.rng)
 	if drop.is_empty():
 		return
-	var id := str(drop.get("id", ""))
-	var qty := int(drop.get("qty", 0))
+	var id = str(drop.get("id", ""))
+	var qty = int(drop.get("qty", 0))
 	if qty <= 0 or id == "":
 		return
 	if id.begins_with("ball_"):

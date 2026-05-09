@@ -1,0 +1,17 @@
+{
+  "id": "region_01",
+  "name": "初始草地",
+  "encounters": [
+    { "species_id": "slime_001", "weight": 35 },
+    { "species_id": "sprout_001", "weight": 20 },
+    { "species_id": "bird_001", "weight": 15 },
+    { "species_id": "fox_001", "weight": 10 },
+    { "species_id": "turtle_001", "weight": 6 },
+    { "species_id": "cat_001", "weight": 5 },
+    { "species_id": "bee_001", "weight": 4 },
+    { "species_id": "mushroom_001", "weight": 3 },
+    { "species_id": "golem_001", "weight": 1 },
+    { "species_id": "dragon_001", "weight": 1 }
+  ]
+}
+

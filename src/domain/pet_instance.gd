@@ -19,8 +19,8 @@ func to_save_dict() -> Dictionary:
 		"current_hp": current_hp
 	}
 
-static func from_save_dict(d: Dictionary) -> PetInstance:
-	var p := PetInstance.new()
+static func from_save_dict(d: Dictionary):
+	var p = (load("res://src/domain/pet_instance.gd") as Script).new()
 	p.species_id = d.get("species_id", "")
 	p.level = int(d.get("level", 1))
 	p.exp = int(d.get("exp", 0))

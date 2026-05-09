@@ -33,6 +33,18 @@ text = ""
 [node name="StartSmelt" type="Button" parent="Margin/VBox"]
 text = "开工：smelt_ingot"
 
+[node name="UpgradeForge" type="Button" parent="Margin/VBox"]
+text = "升级熔炉"
+
+[node name="AssignHelper" type="Button" parent="Margin/VBox"]
+text = "分配助手"
+
+[node name="ResearchSword" type="Button" parent="Margin/VBox"]
+text = "研究：短剑"
+
+[node name="StartSword" type="Button" parent="Margin/VBox"]
+text = "开工：craft_sword"
+
 [node name="Tick1" type="Button" parent="Margin/VBox"]
 text = "tick +1"
 
@@ -41,4 +53,3 @@ text = "tick +3"
 
 [node name="Back" type="Button" parent="Margin/VBox"]
 text = "返回大地图"
-

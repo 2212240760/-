@@ -12,7 +12,7 @@ func get_item(item_id: String) -> int:
 	return int(items.get(item_id, 0))
 
 func set_item(item_id: String, amount: int) -> void:
-	var v := max(0, int(amount))
+	var v = max(0, int(amount))
 	if v == 0:
 		items.erase(item_id)
 	else:
@@ -23,4 +23,3 @@ func add_item(item_id: String, delta: int) -> void:
 
 func to_dict() -> Dictionary:
 	return items.duplicate(true)
-

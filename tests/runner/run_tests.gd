@@ -1,7 +1,7 @@
 extends SceneTree
 
 func _initialize():
-	var failures := 0
+	var failures = 0
 	for path in _collect_unit_tests("res://tests/unit"):
 		failures += _run(load(path), path)
 
@@ -14,7 +14,7 @@ func _initialize():
 
 func _collect_unit_tests(dir_path: String) -> Array[String]:
 	var files: Array[String] = []
-	var dir := DirAccess.open(dir_path)
+	var dir = DirAccess.open(dir_path)
 	if dir == null:
 		return files
 

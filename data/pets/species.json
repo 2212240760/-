@@ -1,0 +1,93 @@
+[
+  {
+    "id": "slime_001",
+    "name": "软泥团",
+    "rarity": "common",
+    "elements": ["water"],
+    "base_stats": { "hp": 30, "atk": 8, "def": 6, "spd": 7 },
+    "learnset": ["splash", "bubble"],
+    "possible_traits": ["sticky", "calm"]
+  },
+  {
+    "id": "sprout_001",
+    "name": "芽苗",
+    "rarity": "common",
+    "elements": ["grass"],
+    "base_stats": { "hp": 26, "atk": 9, "def": 6, "spd": 8 },
+    "learnset": ["tackle"],
+    "possible_traits": ["hearty", "quickgrow"]
+  },
+  {
+    "id": "bird_001",
+    "name": "小翼鸟",
+    "rarity": "common",
+    "elements": ["air"],
+    "base_stats": { "hp": 24, "atk": 10, "def": 5, "spd": 11 },
+    "learnset": ["tackle"],
+    "possible_traits": ["evasion", "keeneye"]
+  },
+  {
+    "id": "fox_001",
+    "name": "火绒狐",
+    "rarity": "rare",
+    "elements": ["fire"],
+    "base_stats": { "hp": 28, "atk": 12, "def": 6, "spd": 10 },
+    "learnset": ["tackle"],
+    "possible_traits": ["burning", "swift"]
+  },
+  {
+    "id": "turtle_001",
+    "name": "岩背龟",
+    "rarity": "rare",
+    "elements": ["earth"],
+    "base_stats": { "hp": 38, "atk": 9, "def": 13, "spd": 5 },
+    "learnset": ["tackle"],
+    "possible_traits": ["shell", "sturdy"]
+  },
+  {
+    "id": "cat_001",
+    "name": "影猫",
+    "rarity": "rare",
+    "elements": ["dark"],
+    "base_stats": { "hp": 27, "atk": 11, "def": 6, "spd": 12 },
+    "learnset": ["tackle"],
+    "possible_traits": ["ambush", "nightwalk"]
+  },
+  {
+    "id": "bee_001",
+    "name": "蜜针蜂",
+    "rarity": "epic",
+    "elements": ["air", "grass"],
+    "base_stats": { "hp": 22, "atk": 14, "def": 4, "spd": 14 },
+    "learnset": ["tackle"],
+    "possible_traits": ["poison", "hustle"]
+  },
+  {
+    "id": "mushroom_001",
+    "name": "孢子菇",
+    "rarity": "epic",
+    "elements": ["grass"],
+    "base_stats": { "hp": 34, "atk": 10, "def": 9, "spd": 6 },
+    "learnset": ["tackle"],
+    "possible_traits": ["spore", "regen"]
+  },
+  {
+    "id": "golem_001",
+    "name": "石偶",
+    "rarity": "epic",
+    "elements": ["earth"],
+    "base_stats": { "hp": 44, "atk": 13, "def": 14, "spd": 3 },
+    "learnset": ["tackle"],
+    "possible_traits": ["guardian", "heavy"]
+  },
+  {
+    "id": "dragon_001",
+    "name": "幼龙",
+    "rarity": "legend",
+    "elements": ["fire", "air"],
+    "base_stats": { "hp": 40, "atk": 16, "def": 10, "spd": 10 },
+    "learnset": ["tackle"],
+    "possible_traits": ["aura", "dominance"]
+  }
+]
+

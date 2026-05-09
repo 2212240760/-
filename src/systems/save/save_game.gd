@@ -20,8 +20,8 @@ func to_dict() -> Dictionary:
 		"progress": progress
 	}
 
-static func from_dict(d: Dictionary) -> SaveGame:
-	var s := SaveGame.new()
+static func from_dict(d: Dictionary):
+	var s = (load("res://src/systems/save/save_game.gd") as Script).new()
 	s.player_party = d.get("player_party", [])
 	s.codex = d.get("codex", s.codex)
 	s.inventory = d.get("inventory", {})

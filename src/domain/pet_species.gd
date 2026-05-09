@@ -10,8 +10,8 @@ var base_stats: Dictionary = {}
 var learnset: Array = []
 var possible_traits: Array = []
 
-static func from_dict(d: Dictionary) -> PetSpecies:
-	var s := PetSpecies.new()
+static func from_dict(d: Dictionary):
+	var s = (load("res://src/domain/pet_species.gd") as Script).new()
 	s.id = d.get("id", "")
 	s.name = d.get("name", "")
 	s.rarity = d.get("rarity", "")

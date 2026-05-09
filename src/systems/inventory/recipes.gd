@@ -72,7 +72,7 @@ func _parse_stacks(raw: Array) -> Array:
 	for e in raw:
 		if typeof(e) != TYPE_DICTIONARY:
 			continue
-		var s := ItemStack.from_dict(e)
+		var s = ItemStack.from_dict(e)
 		if s.is_valid():
 			out.append(s)
 	return out
