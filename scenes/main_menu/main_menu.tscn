@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/main_menu/main_menu.gd" id="1"]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Margin" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="Margin"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="Margin/VBox"]
+text = "主菜单"
+
+[node name="Status" type="Label" parent="Margin/VBox"]
+text = ""
+
+[node name="NewGame" type="Button" parent="Margin/VBox"]
+text = "新游戏"
+
+[node name="LoadGame" type="Button" parent="Margin/VBox"]
+text = "读取存档"
+
+[node name="Quit" type="Button" parent="Margin/VBox"]
+text = "退出"
+

@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/overworld/overworld.gd" id="1"]
+
+[node name="Overworld" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Margin" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="Margin"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="Margin/VBox"]
+text = "大地图"
+
+[node name="Info" type="Label" parent="Margin/VBox"]
+text = ""
+
+[node name="Status" type="Label" parent="Margin/VBox"]
+text = ""
+
+[node name="GoBattle" type="Button" parent="Margin/VBox"]
+text = "进入战斗"
+
+[node name="GoBase" type="Button" parent="Margin/VBox"]
+text = "进入据点"
+
+[node name="Save" type="Button" parent="Margin/VBox"]
+text = "保存"
+
+[node name="Menu" type="Button" parent="Margin/VBox"]
+text = "返回主菜单"
+
